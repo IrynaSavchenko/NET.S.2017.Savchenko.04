@@ -58,7 +58,7 @@ namespace Algorithm
             }
             if (epsilon > MinPrecision || epsilon < MaxPrecision)
             {
-                throw new ArgumentException($"Precision value {nameof(epsilon)} must be positive");
+                throw new ArgumentException($"Precision value {nameof(epsilon)} is out of range");
             }
             if (number < 0 && n % 2 == 0)
             {
