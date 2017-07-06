@@ -53,17 +53,13 @@ namespace Algorithm
         private static void CheckParameters(double number, double n, double epsilon)
         {
             if (n <= 0)
-            {
                 throw new ArgumentException($"Root degree {nameof(n)} cannot be negative");
-            }
+
             if (epsilon > MinPrecision || epsilon < MaxPrecision)
-            {
                 throw new ArgumentException($"Precision value {nameof(epsilon)} is out of range");
-            }
+
             if (number < 0 && n % 2 == 0)
-            {
                 throw new ArgumentException($"Aliquot root {n} cannot be taken from a negative number {number}");
-            }
         }
     }
 }
