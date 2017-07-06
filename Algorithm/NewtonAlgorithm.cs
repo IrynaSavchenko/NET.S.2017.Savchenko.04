@@ -59,7 +59,8 @@ namespace Algorithm
                 throw new ArgumentException($"Precision value {nameof(epsilon)} is out of range");
 
             if (number < 0 && n % 2 == 0)
-                throw new ArgumentException($"Aliquot root {n} cannot be taken from a negative number {number}");
+                throw new ArgumentException(
+                    $"Aliquot root {nameof(n)} cannot be taken from a negative number {nameof(number)}");
         }
     }
 }
