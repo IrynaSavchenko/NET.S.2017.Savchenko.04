@@ -23,6 +23,7 @@ namespace Algorithm
 
             double currentValue;
             double nextValue = number / n;
+
             do
             {
                 currentValue = nextValue;
@@ -41,7 +42,7 @@ namespace Algorithm
         /// <returns></returns>
         private static double GetNextValue(double currentValue, double number, double n)
         {
-            return ((n -1) * currentValue + number / Math.Pow(currentValue, n - 1)) / n;
+            return ((n -1 ) * currentValue + number / Math.Pow(currentValue, (n - 1))) / n;
         }
 
         /// <summary>
